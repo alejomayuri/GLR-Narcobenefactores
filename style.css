@@ -1,0 +1,398 @@
+@font-face {
+    font-family: "SourceSansPro-Bold";
+    src: url("./fonts/SourceSansPro-Bold.otf");
+}
+
+@font-face {
+    font-family: "SourceSansPro-Light";
+    src: url("./fonts/SourceSansPro-Light.otf");
+}
+
+@font-face {
+    font-family: "JMH-Typewriter-Bold";
+    src: url("./fonts/JMH-Typewriter-Black.ttf");
+}
+
+body {
+    background-image: url('./images/fondo.png');
+    background-size: contain;
+    margin: 0;
+}
+
+/*Header*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.5s ease;
+    height: 65px;
+}
+
+.sticky-gray {
+    background: #272626;
+    border-bottom: 5px solid #c51e35;
+}
+
+header img {
+    width: 160px;
+}
+
+.header-main-container {
+    padding: 1px 42px;
+}
+
+.a-header {
+    display: inline-block;
+    margin-top: 13px;
+}
+
+.logo-desktop {
+    font-size: 2.5rem;
+    color: #ffff;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: 700;
+    margin: 0;
+}
+
+.logo-mobile {
+    font-size: 2.5rem;
+    color: #000;
+    text-shadow: 1px 1px 1px #fff;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.right {
+    margin-top: 13px;
+    float: right !important;
+}
+
+header span {
+    font-size: 0;
+}
+
+span a.btn-fb {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+span a.btn-twt {
+    background-position: 0 -43px;
+    background-repeat: no-repeat;
+}
+
+span a.btn-wsp {
+    background-position: 0 -86px;
+    background-repeat: no-repeat;
+}
+
+.right span a {
+    background-image: url(https://s3.amazonaws.com/glr-demo/2020/04/13/icons-white-1586816732.svg);
+}
+
+span [class*="btn-"] {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+    .header-main-container {
+        padding: 1px 10px;
+    }
+
+}
+
+/*Main*/
+.mainHeader {
+    position: relative;
+    min-height: 117vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portadaImg {
+    height: 100%;
+    margin: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.portadaMobile {
+    display: none;
+}
+
+.portadaImg img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.tituloText {
+    height: 100%;
+    margin-top: -320px;
+    padding: 42px 42px 42px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.tituloMobile {
+    display: none;
+}
+
+.tituloText h1 {
+    color: #d0c77f;
+    font-family: "JMH-Typewriter-Bold";
+    font-size: 100px;
+    margin: 25px;
+    text-shadow: rgb(0, 0, 0) 3px 3px 15px, rgb(0, 0, 0) -3px -3px 15px, rgb(0, 0, 0) -3px 3px 15px, rgb(0, 0, 0) 3px -3px 15px;
+}
+
+.tituloText h2 {
+    color: #fff;
+    font-size: 40px;
+    font-family: "SourceSansPro-Bold";
+    margin: 0;
+    letter-spacing: 1.5px;
+    text-shadow: rgb(0, 0, 0) 3px 3px 15px, rgb(0, 0, 0) -3px -3px 15px, rgb(0, 0, 0) -3px 3px 15px, rgb(0, 0, 0) 3px -3px 15px;
+}
+
+p, span {
+    font-family: "SourceSansPro-Light";
+}
+
+p {
+    font-family: "SourceSansPro-Light";
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+    text-align: left;
+}
+
+.textCenter {
+    text-align: center;
+    margin-top: 30px;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.row {
+    margin: 80px 0;
+}
+
+.row:nth-child(1), .row:nth-child(2) {
+    margin: 0;
+}
+
+.row:last-of-type {
+    margin: 0;
+}
+
+.creditosTop {
+    width: 400px;
+    border-bottom: 5px solid #4e5718;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7px;
+}
+
+.creditosTop span:first-of-type {
+    letter-spacing: 1.5px;
+}
+
+.mainImg {
+    width: 100%;
+}
+
+footer .container p {
+    text-align: center;
+    font-size: 17px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer .container p:nth-child(1) {
+    margin-top: 100px;
+}
+
+footer img {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+}
+
+.logosSite {
+    margin-top: 50px;
+}
+
+.logosSite img:nth-child(2) {
+    margin-top: 20px;
+}
+
+.logosSite p {
+    margin-top: 25px !important;
+}
+
+.inside-p {
+    margin-bottom: -25px !important;
+}
+
+.creditos {
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.creditos p {
+    margin: 0 !important;
+}
+
+.footerClose {
+    margin-top: 60px !important;
+    padding-bottom: 100px;
+}
+
+
+@media (max-width: 1400px) {
+    .tituloText {
+        margin-top: -250px;
+    }
+
+    .tituloText h1 {
+        font-size: 85px;
+        margin: 15px;
+    }
+
+    .tituloText h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .row:nth-child(2) {
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 810px) {
+    .mainHeader {
+        min-height: 100vh;
+    }
+
+    .tituloDesktop {
+        display: none;
+    }
+
+    .tituloMobile {
+        display: block;
+    }
+
+    .tituloMobile h1:nth-child(1) {
+        font-size: 110px;
+    }
+
+    .tituloMobile h1:nth-child(2) {
+        font-size: 55px;
+        margin-top: -45px;
+    }
+
+    .tituloText h2 {
+        width: 530px;
+        margin: 40px auto;
+    }
+
+    .tituloText {
+        margin-top: -308px;
+    }
+
+    .container {
+        padding: 0 35px;
+    }
+
+    .textCenter {
+        margin-top: -80px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .row {
+        margin: 60px 0;
+    }
+
+    .portadaMobile {
+        display: block;
+    }
+}
+
+@media (max-width: 430px) {
+    .textCenter {
+        text-align: justify;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .creditosTop {
+        width: 100%;
+    }
+
+    .row {
+        margin: 40px 0;
+    }
+
+    span {
+        font-size: 15px;
+    }
+
+    .portadaDesktop {
+        display: none;
+    }
+
+    .tituloMobile h1:nth-child(1) {
+        font-size: 75px;
+    }
+
+    .tituloMobile h1:nth-child(2) {
+        font-size: 36px;
+        margin-top: -36px;
+    }
+
+    .tituloText h2 {
+        font-size: 20px;
+        width: 100%;
+        font-weight: 500;
+        margin-top: 35px;
+    }
+
+    .row:nth-child(2) {
+        margin-top: 100px;
+    }
+}
