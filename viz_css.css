@@ -65,7 +65,15 @@ text {
     width: 8px;
     height: 8px;
     display: inline-block;
-    margin: 2px 4px 0px 0px;
+    margin: 2px 2px 0px 0px;
+}
+
+.legend_1,
+.legend_2,
+.legend_3,
+.legend_4 {
+    display: inline-block;
+    margin-right: 14px;
 }
 
 .legend_1 span,
@@ -80,7 +88,7 @@ text {
     width: 8px;
     height: 8px;
     display: inline-block;
-    margin: 2px 4px 0px 0px;
+    margin: 2px 2px 0px 0px;
 }
 
 .legend_3 .square {
@@ -88,7 +96,7 @@ text {
     width: 8px;
     height: 8px;
     display: inline-block;
-    margin: 2px 4px 0px 0px;
+    margin: 2px 2px 0px 0px;
 }
 
 .legend_4 .square {
@@ -96,7 +104,7 @@ text {
     width: 8px;
     height: 8px;
     display: inline-block;
-    margin: 2px 4px 0px 0px;
+    margin: 2px 2px 0px 0px;
     font-family: "SourceSansPro-Light";
 }
 
@@ -171,5 +179,13 @@ text {
 @media only screen and (max-width: 600px) {
     #container_mapa {
         width: 100%
+    }
+    .legend_1,
+    .legend_2,
+    .legend_3,
+    .legend_4 {
+        display: block;
+        margin: auto;
+        margin-right: 0px;
     }
 }
