@@ -17,12 +17,14 @@ body {
     background-image: url('./images/fondo.png');
     background-size: contain;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .sticky-gray {
     background: #141411;
     border-bottom: 5px solid #4e5718;
 }
+
 
 /*Header*/
 
@@ -35,6 +37,7 @@ header {
     transition: all 0.5s ease;
     height: 65px;
 }
+
 
 /* .sticky-gray {
     background: #272626;
@@ -113,10 +116,11 @@ span [class*="btn-"] {
     .header-main-container {
         padding: 1px 10px;
     }
-
 }
 
+
 /*Main*/
+
 .mainHeader {
     position: relative;
     min-height: 117vh;
@@ -178,7 +182,8 @@ span [class*="btn-"] {
     text-shadow: rgb(0, 0, 0) 3px 3px 15px, rgb(0, 0, 0) -3px -3px 15px, rgb(0, 0, 0) -3px 3px 15px, rgb(0, 0, 0) 3px -3px 15px;
 }
 
-p, span {
+p,
+span {
     font-family: "SourceSansPro-Light";
 }
 
@@ -210,7 +215,8 @@ span {
     margin: 80px 0;
 }
 
-.row:nth-child(1), .row:nth-child(2) {
+.row:nth-child(1),
+.row:nth-child(2) {
     margin: 0;
 }
 
@@ -269,6 +275,7 @@ footer img {
     height: auto;
 }
 
+
 /* .logosSite img:nth-child(2) {
     margin-top: 20px;
 } */
@@ -296,6 +303,7 @@ footer img {
     margin-top: 60px !important;
     padding-bottom: 100px;
 }
+
 
 /*carrusel scroll*/
 
@@ -414,20 +422,16 @@ footer img {
     .slides-map .slide__image img.photo_left {
         left: 50%;
     }
-
     .slides-map .slide__image img {
         width: 100%;
         height: auto;
     }
-
     .slides-map .slide__image h3 {
         font-size: 4.5rem;
     }
-
     .slides-map .slide__image h2 {
         font-size: 10rem;
     }
-
     .slides-map .slide__image .legend_photo {
         font-weight: 700;
         font-size: 15px;
@@ -435,17 +439,14 @@ footer img {
     }
 }
 
-
 @media (max-width: 1400px) {
     .tituloText {
         margin-top: -250px;
     }
-
     .tituloText h1 {
         font-size: 85px;
         margin: 15px;
     }
-
     .tituloText h2 {
         font-size: 32px;
     }
@@ -461,49 +462,38 @@ footer img {
     .mainHeader {
         min-height: 100vh;
     }
-
     .tituloDesktop {
         display: none;
     }
-
     .tituloMobile {
         display: block;
     }
-
     .tituloMobile h1:nth-child(1) {
         font-size: 110px;
     }
-
     .tituloMobile h1:nth-child(2) {
         font-size: 55px;
         margin-top: -45px;
     }
-
     .tituloText h2 {
         width: 530px;
         margin: 40px auto;
     }
-
     .tituloText {
         margin-top: -308px;
     }
-
     .container {
         padding: 0 35px;
     }
-
     .textCenter {
         margin-top: -80px;
     }
-
     p {
         font-size: 20px;
     }
-
     .row {
         margin: 60px 0;
     }
-
     .portadaMobile {
         display: block;
     }
@@ -513,43 +503,34 @@ footer img {
     .textCenter {
         text-align: justify;
     }
-
     p {
         font-size: 18px;
     }
-
     .creditosTop {
         width: 100%;
     }
-
     .row {
         margin: 40px 0;
     }
-
     span {
         font-size: 15px;
     }
-
     .portadaDesktop {
         display: none;
     }
-
     .tituloMobile h1:nth-child(1) {
         font-size: 75px;
     }
-
     .tituloMobile h1:nth-child(2) {
         font-size: 36px;
         margin-top: -36px;
     }
-
     .tituloText h2 {
         font-size: 20px;
         width: 350px;
         font-weight: 500;
         margin-top: 35px;
     }
-
     .row:nth-child(2) {
         margin-top: 100px;
     }
