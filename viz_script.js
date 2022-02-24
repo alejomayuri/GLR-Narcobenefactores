@@ -40,7 +40,7 @@ function linechart() {
         .tickFormat(function(d) {
             return d;
         })
-        .ticks(5)
+        .ticks(6)
         .innerTickSize(15)
         .outerTickSize(0)
         .orient("left");
@@ -90,7 +90,7 @@ function linechart() {
             }),
             d3.max(companies, function(c) {
                 return d3.max(c.values, function(v) {
-                    return v.price;
+                    return v.price + 100;
                 });
             }),
         ]);
