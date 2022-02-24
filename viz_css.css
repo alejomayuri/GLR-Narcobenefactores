@@ -1,0 +1,175 @@
+.mt-0 {
+    margin-top: 0px !important;
+}
+
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+#container_coca {
+    height: 450px;
+    width: 90%;
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+#container_coca svg {
+    width: 100%;
+    height: 350px;
+}
+
+.focus circle {
+    fill: none;
+    stroke: steelblue;
+}
+
+text {
+    font-family: "SourceSansPro-Light";
+}
+
+.focus text {
+    font-size: 16px;
+    /* font-family: "SourceSansPro-Light"; */
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+.tooltip {
+    fill: white;
+    stroke: #000;
+}
+
+.tooltip-date,
+.tooltip-likes {
+    font-weight: bold;
+}
+
+.legend_1 .square {
+    background-color: #546022;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin: 2px 4px 0px 0px;
+}
+
+.legend_1 span,
+.legend_2 span,
+.legend_3 span,
+.legend_4 span {
+    font-weight: 500;
+}
+
+.legend_2 .square {
+    background-color: #a99e22;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin: 2px 4px 0px 0px;
+}
+
+.legend_3 .square {
+    background-color: #8b821c;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin: 2px 4px 0px 0px;
+}
+
+.legend_4 .square {
+    background-color: #849249;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin: 2px 4px 0px 0px;
+    font-family: "SourceSansPro-Light";
+}
+
+.container_legend {
+    position: absolute;
+    bottom: 0rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+
+/* mapa de ramon castilla
+ */
+
+#container_mapa {
+    height: 450px;
+    width: 90%;
+    display: block;
+}
+
+#container_mapa svg {
+    width: 100%;
+    /*     height: 350px; */
+}
+
+#container_mapa .focus text {
+    font-size: 14px
+}
+
+.subunit {
+    fill: none;
+    stroke: #777;
+    stroke-dasharray: 2, 2;
+    stroke-linejoin: round;
+}
+
+.subunit.PUT {
+    fill: #949062;
+}
+
+.subunit.RQN {
+    fill: #778248;
+}
+
+.subunit.LORETO {
+    fill: #849249;
+}
+
+.subunit.MAYNAS {
+    fill: #777345;
+}
+
+.subunit.DATEM {
+    fill: #61603a;
+}
+
+.subunit.AA {
+    fill: #546022;
+}
+
+.subunit.UCA {
+    fill: #728037;
+}
+
+.subunit.MRC {
+    fill: #b8ad38;
+    stroke: #ababab;
+    stroke-width: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    #container_mapa {
+        width: 100%
+    }
+}
