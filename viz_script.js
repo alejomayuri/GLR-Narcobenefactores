@@ -246,10 +246,10 @@ function linechart() {
             var name;
 
             Object.keys(companies).map(function(key, index) {
-                console.log(c.price, key, companies[key]);
+                // console.log(c.price, key, companies[key]);
                 var datita = companies[key].values;
                 Object.keys(datita).map(function(k, i) {
-                    console.log(datita[k]);
+                    // console.log(datita[k]);
 
                     if (c.price == datita[k].price) {
                         name = companies[key].name;
@@ -343,7 +343,7 @@ function map_rm() {
     var path = d3.geo.path().projection(projection);
 
     d3.json("loreto.json", function(error, topology) {
-        console.log(topology);
+        // console.log(topology);
 
         //     svg.append("path")
         // .datum(topojson.feature(topology, topology.objects.loreto))
@@ -450,7 +450,12 @@ function centerDiv(that) {
     var position = element.getBoundingClientRect();
 
     // checking whether fully visible
-    if (position.top >= 0 && position.bottom <= window.innerHeight) {
+    if (position.top >= 0 && position.bottom <= window.innerHeight) {}
+
+    // checking for partial visibility
+    if (position.top < window.innerHeight && position.bottom >= 0) {
+        //console.log("Element is partially visible in screen");
+
         if (that == "#container_coca") {
             if (firstTime_1 == 0) {
                 linechart();
@@ -463,10 +468,5 @@ function centerDiv(that) {
             }
             firstTime_2 = 1;
         }
-    }
-
-    // checking for partial visibility
-    if (position.top < window.innerHeight && position.bottom >= 0) {
-        //console.log("Element is partially visible in screen");
     }
 }
