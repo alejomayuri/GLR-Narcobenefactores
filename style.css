@@ -19,6 +19,11 @@ body {
     margin: 0;
 }
 
+.sticky-gray {
+    background: #141411;
+    border-bottom: 5px solid #4e5718;
+}
+
 /*Header*/
 
 header {
@@ -31,10 +36,10 @@ header {
     height: 65px;
 }
 
-.sticky-gray {
+/* .sticky-gray {
     background: #272626;
     border-bottom: 5px solid #c51e35;
-}
+} */
 
 header img {
     width: 160px;
@@ -142,12 +147,14 @@ span [class*="btn-"] {
 }
 
 .tituloText {
-    height: 100%;
-    margin-top: -320px;
-    padding: 42px 42px 42px;
-    position: relative;
+    position: absolute;
+    height: 230px;
+    width: 1200px;
+    top: 50%;
+    left: 50%;
+    margin-left: -600px;
+    margin-top: -190px;
     text-align: center;
-    width: 100%;
 }
 
 .tituloMobile {
@@ -249,9 +256,22 @@ footer img {
     margin-top: 50px;
 }
 
-.logosSite img:nth-child(2) {
-    margin-top: 20px;
+.lr-conectas {
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
 }
+
+.lr-conectas img {
+    height: auto;
+}
+
+/* .logosSite img:nth-child(2) {
+    margin-top: 20px;
+} */
 
 .logosSite p {
     margin-top: 25px !important;
@@ -275,6 +295,144 @@ footer img {
 .footerClose {
     margin-top: 60px !important;
     padding-bottom: 100px;
+}
+
+/*carrusel scroll*/
+
+.slides-map {
+    margin: 5rem auto;
+    position: relative;
+}
+
+.slides-map .slide {
+    position: relative;
+    width: 100%;
+    height: 140vh;
+}
+
+.slides-map .slide__content {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    top: 50px;
+    height: calc(100vh - 50px);
+}
+
+.carrusel-fixed {
+    position: fixed;
+}
+
+.slides-map .fit-to-top {
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    opacity: 1;
+}
+
+.slides-map .fit-to-bottom {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    opacity: 1;
+}
+
+.slides-map .visible {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.slides-map .slide__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides-map .slide__image img.photo_left {
+    left: -18%;
+}
+
+.slides-map .slide__image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: none;
+    max-height: none;
+}
+
+.slides-map .slide__image .legend_photo {
+    position: absolute;
+    bottom: 0;
+    background: #f10d2f;
+    opacity: 0.9;
+    width: 100%;
+    margin: 0;
+    padding: 7px 14px;
+    color: #fff;
+}
+
+.slides-map .slide__image h3 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 2px 2px #1c2938;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+
+.slides-map .slide__image h2 {
+    position: absolute;
+    top: 33%;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    left: 50%;
+    font-size: 6rem;
+    font-weight: 700;
+    color: #f10d2f;
+    text-shadow: 1px 2px 2px #1c2938;
+    font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 768px) {
+    .slides-map .slide__image img.photo_left {
+        left: 50%;
+    }
+
+    .slides-map .slide__image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slides-map .slide__image h3 {
+        font-size: 4.5rem;
+    }
+
+    .slides-map .slide__image h2 {
+        font-size: 10rem;
+    }
+
+    .slides-map .slide__image .legend_photo {
+        font-weight: 700;
+        font-size: 15px;
+        text-align: center;
+    }
 }
 
 
@@ -387,7 +545,7 @@ footer img {
 
     .tituloText h2 {
         font-size: 20px;
-        width: 100%;
+        width: 350px;
         font-weight: 500;
         margin-top: 35px;
     }

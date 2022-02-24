@@ -9,11 +9,21 @@
 
     <link rel="stylesheet" href="./style.css">
 
-    <style>
-        html {
-            background-color: rgb(90, 90, 90);
-        }
-    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-6536106-1"></script>
+    <script defer>
+        function gtag() { dataLayer.push(arguments); }
+        (window.dataLayer = window.dataLayer || []), gtag("js", new Date()), gtag("config", "UA-6536106-1");
+    </script>
+    <script src="//cdn.shopify.com/s/files/1/1278/8621/t/13/assets/jquery.event.move.js?289"
+        type="text/javascript"></script>
+    <script src="//cdn.shopify.com/s/files/1/1278/8621/t/13/assets/jquery.twentytwenty.js?289"
+        type="text/javascript"></script>
+    <script src="//cdn.shopify.com/s/files/1/1278/8621/t/13/assets/theme.js?289" type="text/javascript"></script>
+    <script src="js/code.js"></script>
+    <script src="./code.js"></script>
 </head>
 
 <body>
@@ -198,6 +208,50 @@
         <div class="row">
             <img class="mainImg" src="./images/ronald.png" alt="Ronald">
         </div>
+
+
+        <div class="slides-map">
+            <div class="blur_effect"></div>
+            <section class="slide">
+                <div class="slide__content visible">
+                    <div class="slide__image"><img src="https://data.larepublica.pe/mariscal-ramon-castilla-una-provincia-condenada-al-abandono/img/slide_1/foto_1.webp" layout="responsive" decoding="async"
+                            loading="lazy">
+                        <p class="legend_photo">Una lancha viaja por el río Amazonas improvisando techo con banner del
+                            actual presidente Pedro Castillo.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="slide">
+                <div class="slide__content">
+                    <div class="slide__image"><img src="https://data.larepublica.pe/mariscal-ramon-castilla-una-provincia-condenada-al-abandono/img/slide_1/foto_2.webp" layout="responsive" decoding="async"
+                            loading="lazy">
+                        <p class="legend_photo">Un comerciante transporta hielo comprado en Brasil por el muelle de la
+                            comunidad indígena Bellavista Callaru.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="slide">
+                <div class="slide__content">
+                    <div class="slide__image"><img src="https://data.larepublica.pe/mariscal-ramon-castilla-una-provincia-condenada-al-abandono/img/slide_1/foto_3.webp
+                        " layout="responsive" decoding="async"
+                            loading="lazy">
+                        <p class="legend_photo">Ciudadanos indígenas esperan atención médica en puesto de salud, pero
+                            solo hay un técnico en enfermería.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="slide">
+                <div class="slide__content">
+                    <div class="slide__image"><img src="https://data.larepublica.pe/mariscal-ramon-castilla-una-provincia-condenada-al-abandono/img/slide_1/foto_4.webp" layout="responsive" decoding="async"
+                            loading="lazy">
+                        <p class="legend_photo">Natanael Martínez, morador de la comunidad indígena Bellavista Callarú y
+                            naturista que combatió la COVID-19.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
         <div class="row">
             <div class="container">
                 <p>
@@ -403,8 +457,10 @@
                     at magna in lorem semper fermentum at.
                 </p>
                 <div class="logosSite">
-                    <img src="./images/footer/logoLR-NEGRO.png" alt="Logo LR">
-                    <img src="./images/footer/Logo-Connectas.png" alt="CONNECTAS">
+                    <div class="lr-conectas">
+                        <img src="./images/footer/logoLR-NEGRO.png" alt="Logo LR">
+                        <img src="./images/footer/Logo-Connectas.png" alt="CONNECTAS">
+                    </div>
                     <div>
                         <p class="inside-p">Dentro de</p>
                         <img src="./images/footer/ARCO-LOGO.png" alt="ARCO">
