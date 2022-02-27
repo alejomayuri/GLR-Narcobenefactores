@@ -597,7 +597,7 @@ $(function() {
     function startChange() {
         changeIt = setInterval(function() {
             changeUp();
-        }, 10000);
+        }, 8000);
     }
 
     function stopChange() {

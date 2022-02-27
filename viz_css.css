@@ -269,6 +269,7 @@ text {
     color: #343436;
     position: relative;
     top: 1rem;
+    text-align: justify;
 }
 
 @media only screen and (max-width: 600px) {
