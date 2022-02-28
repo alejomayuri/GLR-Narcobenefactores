@@ -416,7 +416,7 @@ function map_rm() {
     var projection = d3.geo
         .mercator()
         .center([-73.7, -3.4])
-        .scale(2700)
+        .scale(2500)
         .translate([width / 2, height / 2]);
 
     var path = d3.geo.path().projection(projection);
