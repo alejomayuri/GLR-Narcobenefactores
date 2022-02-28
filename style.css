@@ -503,6 +503,9 @@ footer img {
     .textCenter {
         text-align: justify;
     }
+    .tituloText {
+        margin-top: -190px;
+    }
     p {
         font-size: 18px;
     }
