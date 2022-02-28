@@ -1,5 +1,6 @@
 .mt-0 {
     margin-top: 0px !important;
+    position: relative;
 }
 
 .axis line {
@@ -176,9 +177,108 @@ text {
     stroke-width: 2px;
 }
 
+#legend_mapa {
+    max-width: 400px;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.tick line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.tick text {
+    font-size: 14px;
+}
+
+
+/* slider de testimonios */
+
+.slider {
+    width: 100%;
+    /* background-color: lightgray; */
+    margin: 10px auto;
+    /* height: 200px; */
+}
+
+.slidercontainer {
+    width: 100%;
+    /* height: 200px; */
+    margin: 0px auto;
+}
+
+.sliderspot {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: gray;
+    display: inline;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.sliderspot:hover {
+    background-color: black;
+}
+
+.spot1 {
+    margin: 100px 30px;
+    float: left;
+}
+
+.spot2 {
+    margin: 100px 30px;
+    float: right;
+}
+
+#sliderul {
+    list-style-type: none;
+    /* margin-left: 4%; */
+    width: 80%;
+    /* text-align: center;
+    height: 150px; */
+    padding: 10px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.slidercontent {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #1D1F20;
+}
+
+.slidercontent img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 14px;
+}
+
+.slidercontent p {
+    font-size: 15px;
+}
+
+.slidercontent span {
+    font-size: 18px;
+    display: block;
+    color: #343436;
+    position: relative;
+    top: 1rem;
+    text-align: justify;
+}
+
 @media only screen and (max-width: 600px) {
     #container_mapa {
         width: 100%
+    }
+    #legend_mapa {
+        right: -2rem;
+        bottom: -1rem;
     }
     .legend_1,
     .legend_2,
@@ -187,5 +287,17 @@ text {
         display: block;
         margin: auto;
         margin-right: 0px;
+    }
+    #sliderul {
+        margin-left: 0;
+        width: 70%
+    }
+    .slidercontent img {
+        float: none;
+        margin-right: 0;
+    }
+    .spot1,
+    .spot2 {
+        margin: calc(100%) 10px;
     }
 }

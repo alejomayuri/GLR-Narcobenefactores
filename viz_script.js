@@ -317,6 +317,85 @@ function linechart() {
     });
 }
 
+function legend() {
+    var data_legend = [
+        // { color: "#000", value: 0 },
+        { color: "#949062", value: 1184 },
+        { color: "#778248", value: 1536 },
+        { color: "#849249", value: 2781 },
+        { color: "#777345", value: 3851 },
+        { color: "#61603a", value: 4382 },
+        { color: "#546022", value: 5474 },
+        { color: "#728037", value: 6389 },
+        { color: "#b8ad38", value: 9181 },
+    ];
+
+    // console.log(data_legend);
+    var extent = d3.extent(data_legend, (d) => d.value);
+    var padding = 9;
+    var width = 370;
+    var innerWidth = width - padding * 2;
+    var barHeight = 8;
+    var height = 28;
+
+    var xScale = d3.scale.linear().range([0, innerWidth]).domain(extent);
+
+    var xTicks = ["2000", "4000", "6000", "8000", "9000"];
+
+    var svg = d3
+        .select("#legend_mapa")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    // console.log(extent, xTicks);
+
+    var xAxis = d3.svg
+        .axis()
+        .scale(xScale)
+        // .tickSize(barHeight * 2)
+        .ticks(5)
+        .innerTickSize(15)
+        .tickValues(xTicks)
+        .orient("bottom");
+
+    // var xAxis = d3.svg
+    //   .axis()
+    //   .scale(x)
+    //   .ticks(5)
+    //   .innerTickSize(15)
+    //   .outerTickSize(0)
+    //   .orient("bottom");
+
+    var g = svg.append("g").attr("transform", "translate(" + padding + ", 0)");
+
+    var defs = svg.append("defs");
+
+    var linearGradient = defs.append("linearGradient").attr("id", "myGradient");
+
+    // console.log(d.value, extent[0]);
+
+    linearGradient
+        .selectAll("stop")
+        .data(data_legend)
+        .enter()
+        .append("stop")
+        .attr(
+            "offset",
+            (d) => ((d.value - extent[0]) / (extent[1] - extent[0])) * 100 + "%"
+        )
+        .attr("stop-color", (d) => d.color);
+
+    // (d.value - extent[0]) / (extent[1] - extent[0]) (d.value, extent[0])) * 100 + "%"
+
+    g.append("rect")
+        .attr("width", innerWidth)
+        .attr("height", barHeight)
+        .style("fill", "url(#myGradient)");
+
+    g.append("g").call(xAxis).select(".domain").remove();
+}
+
 function map_rm() {
     var width = $("#container_mapa").width();
     var height = $("#container_mapa").height();
@@ -465,8 +544,63 @@ function centerDiv(that) {
         if (that == "#container_mapa") {
             if (firstTime_2 == 0) {
                 map_rm();
+                legend();
             }
             firstTime_2 = 1;
         }
     }
 }
+
+$(function() {
+    var current = 1;
+    var max = $("li").length + 1;
+
+    $(".slidercontent").hide();
+    $(".slidercontent:nth-child(1)").fadeIn("slow");
+
+    //function to change to next quote
+    function changeUp() {
+        $(".slidercontent").hide();
+        current += 1;
+        if (current === max) {
+            current = 1;
+        }
+        $(".slidercontent:nth-child(" + current + ")").fadeIn("slow");
+    }
+
+    function changeDown() {
+        $(".slidercontent").hide();
+        current -= 1;
+
+        if (current === 0) {
+            current = max - 1;
+        }
+
+        $(".slidercontent:nth-child(" + current + ")").fadeIn("slow");
+    }
+
+    startChange();
+
+    $(".sliderspot2").click(function() {
+        stopChange();
+        changeUp();
+        startChange();
+    });
+
+    $(".sliderspot").click(function() {
+        stopChange();
+        changeDown();
+        startChange();
+    });
+
+    //FUNCTIONS TO CONTROL TIMING CHANGES
+    function startChange() {
+        changeIt = setInterval(function() {
+            changeUp();
+        }, 8000);
+    }
+
+    function stopChange() {
+        clearInterval(changeIt);
+    }
+});
