@@ -280,7 +280,7 @@ text {
         width: 100%
     }
     #legend_mapa {
-        right: -2rem;
+        right: 0rem;
         bottom: -1rem;
     }
     .legend_1,
