@@ -209,6 +209,7 @@ span {
 .container {
     margin: 0 auto;
     max-width: 940px;
+    clear: both;
 }
 
 .row {

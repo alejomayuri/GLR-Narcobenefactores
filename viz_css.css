@@ -273,6 +273,9 @@ text {
 }
 
 @media only screen and (max-width: 600px) {
+    #container_coca {
+        width: 100%
+    }
     #container_mapa {
         width: 100%
     }
@@ -287,6 +290,9 @@ text {
         display: block;
         margin: auto;
         margin-right: 0px;
+    }
+    .slidercontent span {
+        text-align: left;
     }
     #sliderul {
         margin-left: 0;
