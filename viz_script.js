@@ -18,7 +18,8 @@ function linechart() {
         .attr("width", width)
         .attr("height", height - margin.top)
         .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        .style("pointer-events", "all");
 
     var x = d3.time.scale().range([0, width]);
 
@@ -579,7 +580,7 @@ $(function() {
         $(".slidercontent:nth-child(" + current + ")").fadeIn("slow");
     }
 
-    startChange();
+    //startChange();
 
     $(".sliderspot2").click(function() {
         stopChange();
