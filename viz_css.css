@@ -3,6 +3,11 @@
     position: relative;
 }
 
+h3 {
+    font-family: "SourceSansPro-Bold";
+    text-align: center;
+}
+
 .axis line {
     fill: none;
     stroke: #000;
@@ -111,7 +116,7 @@ text {
 
 .container_legend {
     position: absolute;
-    bottom: 0rem;
+    bottom: 2rem;
     text-align: center;
     width: 100%;
     font-weight: 500;
@@ -201,6 +206,7 @@ text {
     width: 100%;
     /* background-color: lightgray; */
     margin: 10px auto;
+    margin-bottom: 60px;
     /* height: 200px; */
 }
 
@@ -273,6 +279,9 @@ text {
 }
 
 @media only screen and (max-width: 600px) {
+    .container_legend {
+        bottom: 0rem;
+    }
     #container_coca {
         width: 100%
     }
