@@ -580,7 +580,7 @@ $(function() {
         $(".slidercontent:nth-child(" + current + ")").fadeIn("slow");
     }
 
-    //startChange();
+    startChange();
 
     $(".sliderspot2").click(function() {
         stopChange();
