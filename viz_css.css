@@ -289,8 +289,9 @@ text {
         width: 100%
     }
     #legend_mapa {
-        right: 0rem;
+        left: 50%;
         bottom: -1rem;
+        margin-left: -185px;
     }
     .legend_1,
     .legend_2,
