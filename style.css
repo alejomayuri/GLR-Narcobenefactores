@@ -172,7 +172,6 @@ span [class*="btn-"] {
 
 .tituloText .lr-conectas img:nth-child(2) {
     height: 120%;
-    filter: invert(100);
 }
 
 .tituloMobile {
@@ -183,7 +182,7 @@ span [class*="btn-"] {
     color: #d0c77f;
     font-family: "JMH-Typewriter-Bold";
     font-size: 100px;
-    margin: 25px;
+    margin: 0;
     text-shadow: rgb(0, 0, 0) 3px 3px 15px, rgb(0, 0, 0) -3px -3px 15px, rgb(0, 0, 0) -3px 3px 15px, rgb(0, 0, 0) 3px -3px 15px;
 }
 
@@ -274,7 +273,11 @@ footer img {
 }
 
 .logosSite {
-    margin-top: 50px;
+    margin-top: 0px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .lr-conectas {
@@ -284,6 +287,22 @@ footer img {
     align-items: center;
     justify-content: space-between;
     height: 70px;
+}
+
+.lr-conectas-cont {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.inside-p.a {
+    
+}
+
+.inside-p.b {
+    margin-top: 0px !important;
 }
 
 .lr-conectas img {
@@ -440,6 +459,14 @@ footer img {
     padding: 0 15px;
 }
 
+.onDesktopSlide {
+    display: block;
+}
+
+.onMobileSlide {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .slides-map .slide__image img.photo_left {
         left: 50%;
@@ -472,7 +499,7 @@ footer img {
 
     .tituloText h1 {
         font-size: 85px;
-        margin: 15px;
+        margin: 0;
     }
 
     .tituloText h2 {
@@ -575,6 +602,7 @@ footer img {
 
     .tituloMobile h1:nth-child(1) {
         font-size: 75px;
+        margin-bottom: 25px;
     }
 
     .tituloMobile h1:nth-child(2) {
@@ -586,7 +614,7 @@ footer img {
         font-size: 20px;
         width: 350px;
         font-weight: 500;
-        margin-top: 35px;
+        margin-top: 15px;
     }
 
     .row:nth-child(2) {
@@ -595,7 +623,35 @@ footer img {
 
     .lr-conectas {
         flex-direction: column;
-        height: 140px;
+        height: 300px;
         width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .mainHeader .lr-conectas {
+        height: 160px;
+        width: 300px;
+    }
+
+    .mainHeader .lr-conectas img {
+        width: 300px;
+        height: auto !important;
+    }
+
+    .logosSite {
+        height: 485px;
+        margin-top: 40px;
+    }
+
+    .creditos {
+        margin-top: 0px;
+    }
+
+    .onDesktopSlide {
+        display: none;
+    }
+
+    .onMobileSlide {
+        display: block;
     }
 }
