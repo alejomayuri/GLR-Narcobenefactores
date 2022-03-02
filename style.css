@@ -467,6 +467,11 @@ footer img {
     display: none;
 }
 
+footer a {
+    text-decoration: none;
+    color: rgb(15, 99, 139);
+}
+
 @media (min-width: 768px) {
     .slides-map .slide__image img.photo_left {
         left: 50%;
