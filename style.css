@@ -13,12 +13,17 @@
     src: url("./fonts/JMH-Typewriter-Black.ttf");
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background-image: url('./images/fondo.png');
     background-size: contain;
     margin: 0;
     overflow-x: hidden;
-    position: inherit;
+    /* position: inherit; */
+    position: relative
 }
 
 .sticky-gray {
@@ -297,9 +302,7 @@ footer img {
     justify-content: space-evenly;
 }
 
-.inside-p.a {
-    
-}
+.inside-p.a {}
 
 .inside-p.b {
     margin-top: 0px !important;
