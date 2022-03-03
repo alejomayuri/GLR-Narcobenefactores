@@ -263,7 +263,9 @@ function linechart() {
                 "translate(" + (d3.mouse(this)[0] - 150) + "," + (y(c.price) - 20) + ")"
             );
             focus.select(".tooltip-date").text(name);
-            focus.select(".tooltip-likes").text(c.price);
+            focus
+                .select(".tooltip-likes")
+                .text(d3.format(",")(c.price).toString().replace(",", "."));
         }
 
         var totalLength = [
@@ -510,7 +512,14 @@ function map_rm() {
                 ")"
             );
             // focus.select(".tooltip-date").text(dateFormatter(c.date));
-            focus.select(".tooltip-likes").text(c.properties.ha_perdidas + " ha.");
+            focus
+                .select(".tooltip-likes")
+                .text(
+                    d3
+                    .format(",")(c.properties.ha_perdidas)
+                    .toString()
+                    .replace(",", ".") + " ha."
+                );
         }
     });
 }
@@ -598,7 +607,7 @@ $(function() {
     function startChange() {
         changeIt = setInterval(function() {
             changeUp();
-        }, 8000);
+        }, 12000);
     }
 
     function stopChange() {
