@@ -218,7 +218,7 @@ text {
 }
 
 .sliderspot {
-    width: 2%;
+    width: 4%;
     height: auto;
     display: inline;
     cursor: pointer;
@@ -270,7 +270,7 @@ text {
 .slidercontent img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     float: left;
     margin-right: 14px;
 }
@@ -314,7 +314,7 @@ text {
         text-align: left;
     }
     #sliderul {
-        margin-left: 0;
+        /* margin-left: 0; */
         width: 70%
     }
     .slidercontent img {
