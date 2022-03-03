@@ -252,7 +252,7 @@ text {
 #sliderul {
     list-style-type: none;
     /* margin-left: 4%; */
-    max-width: 700px;
+    max-width: 710px;
     /* text-align: center;
     height: 150px; */
     padding: 10px;
@@ -285,7 +285,17 @@ text {
     color: #343436;
     position: relative;
     top: 1rem;
-    text-align: justify;
+    text-align: left;
+}
+
+span.soundcite-loaded {
+    display: inline-block !important;
+    position: relative;
+    top: 0rem;
+}
+
+span.soundcite-loaded:before {
+    margin-right: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -311,9 +321,9 @@ text {
         margin: auto;
         margin-right: 0px;
     }
-    .slidercontent span {
+    /* .slidercontent span {
         text-align: left;
-    }
+    } */
     #sliderul {
         /* margin-left: 0; */
         width: 70%
