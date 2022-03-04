@@ -581,6 +581,10 @@ footer a {
         width: 300px;
     }
 
+    .mainHeader .tituloText .lr-conectas img {
+        width: 100% !important;
+    }
+
     .row:nth-child(2) {
         margin-top: 50px;
     }
