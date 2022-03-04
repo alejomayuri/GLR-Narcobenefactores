@@ -545,7 +545,7 @@ footer a {
     }
 
     .tituloText h2 {
-        width: 530px;
+        width: 400px;
         margin: 5px auto;
         font-size: 22px;
         padding: 0px 30px;
@@ -577,16 +577,22 @@ footer a {
 
     .lr-conectas {
         flex-direction: column;
-        height: 160px;
+        height: 280px;
         width: 300px;
     }
 
-    .mainHeader .tituloText .lr-conectas img {
-        width: 100% !important;
+    .mainHeader .tituloText .lr-conectas {
+        flex-direction: column;
+        height: 160px;
+        /* width: 300px; */
     }
 
     .row:nth-child(2) {
         margin-top: 50px;
+    }
+
+    footer .container p:nth-child(1) {
+        margin-bottom: 80px;
     }
 }
 
@@ -637,7 +643,7 @@ footer a {
 
     .tituloText h2 {
         font-size: 20px;
-        width: 350px;
+        width: 370px;
         font-weight: 500;
         margin-top: 15px;
     }
