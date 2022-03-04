@@ -523,7 +523,7 @@ footer a {
 
 @media (max-width: 810px) {
     .mainHeader {
-        min-height: 100vh;
+        min-height: 125vh;
     }
 
     .tituloDesktop {
