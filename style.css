@@ -536,6 +536,7 @@ footer a {
 
     .tituloMobile h1:nth-child(1) {
         font-size: 110px;
+        margin-bottom: 25px;
     }
 
     .tituloMobile h1:nth-child(2) {
@@ -545,7 +546,9 @@ footer a {
 
     .tituloText h2 {
         width: 530px;
-        margin: 40px auto;
+        margin: 5px auto;
+        font-size: 22px;
+        padding: 0px 30px;
     }
 
     .tituloText {
@@ -570,6 +573,16 @@ footer a {
 
     .portadaMobile {
         display: block;
+    }
+
+    .lr-conectas {
+        flex-direction: column;
+        height: 160px;
+        width: 300px;
+    }
+
+    .row:nth-child(2) {
+        margin-top: 50px;
     }
 }
 
