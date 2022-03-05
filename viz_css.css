@@ -130,6 +130,7 @@ text {
     height: 450px;
     width: 90%;
     display: block;
+    margin: auto;
 }
 
 #container_mapa svg {
@@ -296,6 +297,14 @@ span.soundcite-loaded {
 
 span.soundcite-loaded:before {
     margin-right: 0;
+}
+
+.creditos a {
+    color: #000;
+}
+
+.creditos a:hover {
+    border-bottom: 1px dashed #000;
 }
 
 @media only screen and (max-width: 600px) {

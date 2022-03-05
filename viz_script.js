@@ -589,18 +589,18 @@ $(function() {
         $(".slidercontent:nth-child(" + current + ")").fadeIn("slow");
     }
 
-    startChange();
+    // startChange();
 
     $(".sliderspot2").click(function() {
-        stopChange();
+        // stopChange();
         changeUp();
-        startChange();
+        // startChange();
     });
 
     $(".sliderspot").click(function() {
-        stopChange();
+        // stopChange();
         changeDown();
-        startChange();
+        // startChange();
     });
 
     //FUNCTIONS TO CONTROL TIMING CHANGES
