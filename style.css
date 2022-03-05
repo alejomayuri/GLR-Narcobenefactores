@@ -522,7 +522,7 @@ footer a {
 
 @media (max-width: 810px) {
     .mainHeader {
-        min-height: 125vh;
+        min-height: 150vh;
     }
 
     .tituloDesktop {
@@ -661,6 +661,10 @@ footer a {
     .mainHeader .lr-conectas {
         height: 160px;
         width: 300px;
+    }
+
+    .mainHeader {
+        min-height: 110vh;
     }
 
     /* .mainHeader .lr-conectas img {
