@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -34,10 +34,10 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.larepublica.pe/favicon-32x32.png" />
     <link href="https://cdn.knightlab.com/libs/soundcite/latest/css/player.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.min.css" />
     <link rel="stylesheet" href="viz_css.css" />
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-6536106-1"></script>
     <script defer>
@@ -52,11 +52,11 @@
     <!-- <script src="//cdn.shopify.com/s/files/1/1278/8621/t/13/assets/jquery.event.move.js?289" type="text/javascript"></script>
     <script src="//cdn.shopify.com/s/files/1/1278/8621/t/13/assets/jquery.twentytwenty.js?289" type="text/javascript"></script>
     <script src="//cdn.shopify.com/s/files/1/1278/8621/t/13/assets/theme.js?289" type="text/javascript"></script> -->
-    <script type="text/javascript" src="https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js"></script>
+    <script type="text/javascript" src="https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js" defer></script>
     <script src="./code.js"></script>
-    <script src="https://d3js.org/d3.v3.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js" defer></script>
     <script src="https://d3js.org/topojson.v1.min.js"></script>
-    <script src="viz_script.js" defer></script>
+    <script src="viz_script.min.js" defer></script>
 </head>
 
 <body>
@@ -102,8 +102,8 @@
     <main>
         <div class="row mainHeader">
             <div class="portadaImg">
-                <img class="portadaDesktop" src="./images/portada-queda.png" alt="Portada" />
-                <img class="portadaMobile" src="./images/portada-mobile.png" alt="Portada mobile" />
+                <img class="portadaDesktop" src="./images/portada-queda.webp" layout="responsive" decoding="async" loading="lazy" alt="Portada" />
+                <img class="portadaMobile" src="./images/portada-mobile.webp" alt="Portada mobile" layout="responsive" decoding="async" loading="lazy" />
             </div>
             <div class="tituloText">
                 <div class="tituloDesktop">
@@ -155,11 +155,6 @@
                     autoridades locales que fueron entrevistados en esta investigación. Esta ausencia que refieren ha sido suplida por organizaciones de tráfico de drogas, con una creciente participación en los asuntos públicos de las comunidades: los
                     “narcobenefactores”.
                 </p>
-                <p style="margin-top: 30px">
-                    Los narcotraficantes que transforman la hoja de coca en cocaína han encontrado un mecanismo para legitimar su actividad ilícita en los territorios donde operan, lo llaman el “derecho a la comunidad”. Se trata de una retribución económica por el terreno
-                    utilizado para cultivar coca destinada al narcotráfico. Se puede dar de muchas formas, en algunos casos se paga un monto por cada arroba de hoja de coca extraída y en otros una mensualidad previamente establecida con los representantes
-                    comunales. Sin ser grandes sumas de dinero, estos ingresos resultan ser determinantes en una provincia como MRC.
-                </p>
             </div>
         </div>
 
@@ -185,6 +180,11 @@
         <div class="row">
             <div class="container">
                 <p style="margin-top: 30px">
+                    Los narcotraficantes que transforman la hoja de coca en cocaína han encontrado un mecanismo para legitimar su actividad ilícita en los territorios donde operan, lo llaman el “derecho a la comunidad”. Se trata de una retribución económica por el terreno
+                    utilizado para cultivar coca destinada al narcotráfico. Se puede dar de muchas formas, en algunos casos se paga un monto por cada arroba de hoja de coca extraída y en otros una mensualidad previamente establecida con los representantes
+                    comunales. Sin ser grandes sumas de dinero, estos ingresos resultan ser determinantes en una provincia como MRC.
+                </p>
+                <p style="margin-top: 30px">
                     Con estas partidas se logran hacer pequeñas obras como locales comunales, losas deportivas o refacciones en colegios, las mismas que tienen gran impacto para las comunidades. Durante esta investigación se identificaron siete obras construidas bajo esa
                     dinámica. Son dos locales comunales, un comedor, un estrado, una loza deportiva y dos colegios con refacciones. Además, se pueden cubrir los gastos de las familias que “caen en desgracia”, ya sea porque alguno de sus miembros enferma
                     o fallece.
@@ -197,8 +197,8 @@
             <section class="slide">
                 <div class="slide__content visible">
                     <div class="slide__image">
-                        <img class="onDesktopSlide" src="./images/obras/obra-1.png" layout="responsive" decoding="async" loading="lazy" />
-                        <img class="onMobileSlide" src="./images/obrasMobile/mobile2.png" layout="responsive" decoding="async" loading="lazy" />
+                        <img class="onDesktopSlide" src="./images/obras/obra-1.webp" layout="responsive" decoding="async" loading="lazy" />
+                        <img class="onMobileSlide" src="./images/obrasMobile/mobile1.webp" layout="responsive" decoding="async" loading="lazy" />
                         <p class="legend_photo">
                             Las imágenes corresponden al registro fotográfico de obras ejecutadas a través de narcobenefactorados, pero han sido distorsionadas para resguardar a las comunidades de cualquier tipo de represalias.
                         </p>
@@ -208,8 +208,8 @@
             <section class="slide">
                 <div class="slide__content">
                     <div class="slide__image">
-                        <img class="onDesktopSlide" src="./images/obras/obra-2.png" layout="responsive" decoding="async" loading="lazy" />
-                        <img class="onMobileSlide" src="./images/obrasMobile/mobile3.png" layout="responsive" decoding="async" loading="lazy" />
+                        <img class="onDesktopSlide" src="./images/obras/obra-2.webp" layout="responsive" decoding="async" loading="lazy" />
+                        <img class="onMobileSlide" src="./images/obrasMobile/mobile2.webp" layout="responsive" decoding="async" loading="lazy" />
                         <p class="legend_photo">
                             Las imágenes corresponden al registro fotográfico de obras ejecutadas a través de narcobenefactorados, pero han sido distorsionadas para resguardar a las comunidades de cualquier tipo de represalias.
                         </p>
@@ -219,8 +219,8 @@
             <section class="slide">
                 <div class="slide__content">
                     <div class="slide__image">
-                        <img class="onDesktopSlide" src="./images/obras/obra-3.png" layout="responsive" decoding="async" loading="lazy" />
-                        <img class="onMobileSlide" src="./images/obrasMobile/mobile4.png" layout="responsive" decoding="async" loading="lazy" />
+                        <img class="onDesktopSlide" src="./images/obras/obra-3.webp" layout="responsive" decoding="async" loading="lazy" />
+                        <img class="onMobileSlide" src="./images/obrasMobile/mobile3.webp" layout="responsive" decoding="async" loading="lazy" />
                         <p class="legend_photo">
                             Las imágenes corresponden al registro fotográfico de obras ejecutadas a través de narcobenefactorados, pero han sido distorsionadas para resguardar a las comunidades de cualquier tipo de represalias.
                         </p>
@@ -230,8 +230,8 @@
             <section class="slide">
                 <div class="slide__content">
                     <div class="slide__image">
-                        <img class="onDesktopSlide" src="./images/obras/obra-4.png" layout="responsive" decoding="async" loading="lazy" />
-                        <img class="onMobileSlide" src="./images/obrasMobile/mobile5.png" layout="responsive" decoding="async" loading="lazy" />
+                        <img class="onDesktopSlide" src="./images/obras/obra-4.webp" layout="responsive" decoding="async" loading="lazy" />
+                        <img class="onMobileSlide" src="./images/obrasMobile/mobile4.webp" layout="responsive" decoding="async" loading="lazy" />
                         <p class="legend_photo">
                             Las imágenes corresponden al registro fotográfico de obras ejecutadas a través de narcobenefactorados, pero han sido distorsionadas para resguardar a las comunidades de cualquier tipo de represalias.
                         </p>
@@ -243,10 +243,10 @@
         <div class="row">
             <div class="container">
                 <p>
-                    Esta investigación se trabajó con once comunidades, tanto indígenas como campesinas, de los cuatro distritos de toda la provincia MRC (Ramón Castilla, Yavarí, San Pablo y Pebas). La mayoría de entrevistados eran o habían sido representantes comunales
-                    además de raspachines, lo que se complementó con actores sociales representativos como maestros y líderes religiosos. Esto para comprobar el patrón testimonial establecido durante una visita previa y descartar la posibilidad de que
-                    se trate de un “hecho aislado”, como suelen repetir las autoridades cada que son consultadas. Por otra parte, los nombres y lugares utilizados han sido reservados para evitar exponerlos a represalias individuales por un problema que
-                    es más bien estructural.
+                    Esta investigación se trabajó con once comunidades, tanto indígenas como campesinas, de los cuatro distritos de toda la provincia MRC (Ramón Castilla, Yavarí, San Pablo y Pebas). La mayoría de entrevistados son o eran representantes comunales además de
+                    raspachines, lo que se complementó con actores sociales representativos como maestros y líderes religiosos. Esto para comprobar el patrón testimonial establecido durante una visita previa y descartar la posibilidad de que se trate
+                    de un “hecho aislado”, como suelen repetir las autoridades cada que son consultadas. Por otra parte, los nombres y lugares utilizados han sido reservados para evitar exponerlos a represalias individuales por un problema que es más
+                    bien estructural.
                 </p>
                 <p style="margin-top: 30px">
                     Para Emilio, el pago de este derecho es una opción al abandono que las comunidades sufren desde hace décadas. “Uno mira la necesidad que tiene el pueblo. Por ejemplo, nosotros veíamos que los fines de semana, cuando caía la lluvia, se hacía un barral
@@ -262,7 +262,7 @@
         </div>
 
         <div class="row photo-site">
-            <img class="onDesktopSlide mainImg" src="./images/emilio.png" alt="emilio" />
+            <img class="onDesktopSlide mainImg" src="./images/emilio.webp" alt="emilio" />
             <img class="onMobileSlide mainImg" src="./images/mobile-emilio.png" layout="responsive" decoding="async" loading="lazy" />
             <p>
                 Emilio conoce muy bien el negocio del narcotráfico, pero dice que “ya hizo capital” y ahora quiere probar suerte en la política para “ayudar a su pueblo”.
@@ -291,10 +291,10 @@
         </div>
 
         <div class="row photo-site">
-            <img class="onDesktopSlide mainImg" src="./images/documentos.png" alt="Documentos" />
+            <img class="onDesktopSlide mainImg" src="./images/documentos.webp" alt="Documentos" />
             <img class="onMobileSlide mainImg" src="./images/mobile-documentos.png" layout="responsive" decoding="async" loading="lazy" />
             <p>
-                Estos documentos están editados para proteger la ubicación de la comunidad y protegerla de cualquier tipo de represalias.
+                Estos documentos están editados para proteger la ubicación de la comunidad y evitar cualquier tipo de represalias.
             </p>
         </div>
 
@@ -353,7 +353,7 @@
         </div>
 
         <div class="row photo-site">
-            <img class="onDesktopSlide mainImg" class="mainImg" src="./images/ronald.png" alt="Ronald" />
+            <img class="onDesktopSlide mainImg" class="mainImg" src="./images/ronald.webp" alt="Ronald" />
             <img class="onMobileSlide mainImg" src="./images/mobile-ronald.png" layout="responsive" decoding="async" loading="lazy" />
             <p>
                 Ronald ha pasado casi la mitad de su vida como raspachín, pero dice no querer involucrarse más en el negocio del narcotráfico para evitar el riesgo de caer preso.
@@ -377,7 +377,7 @@
         </div>
 
         <div class="row photo-site">
-            <img class="onDesktopSlide mainImg" src="./images/cosecha.png" alt="Cosecha" />
+            <img class="onDesktopSlide mainImg" src="./images/cosecha.webp" alt="Cosecha" />
             <img class="onMobileSlide mainImg" src="./images/mobile6.png" layout="responsive" decoding="async" loading="lazy" />
             <p>
                 Agricultor cosecha yucas en medio de su chacra con arbustos en crecimiento de hoja de coca, lo que se le conoce como “cultivo asociado”.
@@ -439,7 +439,7 @@
         </div>
 
         <div class="row photo-site">
-            <img class="onDesktopSlide mainImg" src="./images/familia.png" alt="Familia" />
+            <img class="onDesktopSlide mainImg" src="./images/familia.webp" alt="Familia" />
             <img class="onMobileSlide mainImg" src="./images/mobile7.png" layout="responsive" decoding="async" loading="lazy" />
             <p>
                 Una joven madre de familia y su padre, ambos raspachines ocasionales, trasladándose desde una de las comunidades en donde trabajan.
@@ -476,7 +476,7 @@
                         <div class="sliderspot spot1"></div>
                         <ul id="sliderul">
                             <li class="slidercontent">
-                                <img class="image" src="images/testimonios/image1.png" alt="" />
+                                <img class="image" src="images/testimonios/image1.webp" alt="" layout="responsive" decoding="async" loading="lazy" />
                                 <span>
                     Una arroba se lleva y no te paga el patrón, fiado no más.
                     Ahora Antonio (se coloca pitido) me debe 600, 700 creo ya me
@@ -494,7 +494,7 @@
                   </span>
                             </li>
                             <li class="slidercontent">
-                                <img class="image" src="images/testimonios/image2.png" alt="" />
+                                <img class="image" src="images/testimonios/image2.webp" alt="" layout="responsive" decoding="async" loading="lazy" />
                                 <span>
                     Pues.. o sea,
                     <span
@@ -510,7 +510,7 @@
                                 </span>
                             </li>
                             <li class="slidercontent">
-                                <img class="image" src="images/testimonios/image3.png" alt="" />
+                                <img class="image" src="images/testimonios/image3.webp" alt="" layout="responsive" decoding="async" loading="lazy" />
                                 <span>
                     Yo soy el segundo, después vienen los fincarios, luego los
                     raspachos, los despachadores, los cocineros, los
@@ -564,15 +564,30 @@
           </p>
           <div class="logosSite">
             <div class="lr-conectas">
-              <img src="./images/footer/logoLR-NEGRO.png" alt="Logo LR" />
-              <img src="./images/footer/Logo-Connectas.png" alt="CONNECTAS" />
+              <img
+                src="./images/footer/logoLR-NEGRO.webp"
+                alt="Logo LR"
+                layout="responsive"
+                decoding="async"
+                loading="lazy"
+              />
+              <img
+                src="./images/footer/Logo-Connectas.webp"
+                alt="CONNECTAS"
+                layout="responsive"
+                decoding="async"
+                loading="lazy"
+              />
             </div>
             <div class="lr-conectas">
               <div class="lr-conectas-cont">
                 <p class="inside-p a">Dentro de</p>
                 <img
                   class="inside-img"
-                  src="./images/footer/ARCO-LOGO.png"
+                  src="./images/footer/ARCO-LOGO.webp"
+                  layout="responsive"
+                  decoding="async"
+                  loading="lazy"
                   alt="ARCO"
                 />
               </div>
@@ -580,7 +595,10 @@
                 <p class="inside-p b">Con el apoyo de</p>
                 <img
                   class="inside-img"
-                  src="./images/footer/ICFJ-LOGO.png"
+                  src="./images/footer/ICFJ-LOGO.webp"
+                  layout="responsive"
+                  decoding="async"
+                  loading="lazy"
                   alt="ICFJ"
                 />
               </div>
