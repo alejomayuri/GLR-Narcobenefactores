@@ -219,10 +219,10 @@
             <section class="slide">
                 <div class="slide__content visible">
                     <div class="slide__image">
-                        <img id="slide_img1" class="onDesktopSlide" src="./images/obras/obra-1.png" layout="responsive" decoding="async"
-                            loading="lazy" />
-                        <img id="slide_img1_m" class="onMobileSlide" src="./images/obrasMobile/mobile2.png" layout="responsive"
+                        <img id="slide_img1" class="onDesktopSlide" src="./images/obras/obra-1.png" layout="responsive"
                             decoding="async" loading="lazy" />
+                        <img id="slide_img1_m" class="onMobileSlide" src="./images/obrasMobile/mobile2.png"
+                            layout="responsive" decoding="async" loading="lazy" />
                         <p class="legend_photo">
                             Las imágenes corresponden al registro fotográfico de obras ejecutadas a través de
                             narcobenefactorados, pero han sido distorsionadas para resguardar a las comunidades de
@@ -234,10 +234,10 @@
             <section class="slide">
                 <div class="slide__content">
                     <div class="slide__image">
-                        <img id="slide_img2" class="onDesktopSlide" src="./images/obras/obra-2.png" layout="responsive" decoding="async"
-                            loading="lazy" />
-                        <img id="slide_img2_m" class="onMobileSlide" src="./images/obrasMobile/mobile3.png" layout="responsive"
+                        <img id="slide_img2" class="onDesktopSlide" src="./images/obras/obra-2.png" layout="responsive"
                             decoding="async" loading="lazy" />
+                        <img id="slide_img2_m" class="onMobileSlide" src="./images/obrasMobile/mobile3.png"
+                            layout="responsive" decoding="async" loading="lazy" />
                         <p class="legend_photo">
                             Las imágenes corresponden al registro fotográfico de obras ejecutadas a través de
                             narcobenefactorados, pero han sido distorsionadas para resguardar a las comunidades de
@@ -249,10 +249,10 @@
             <section class="slide">
                 <div class="slide__content">
                     <div class="slide__image">
-                        <img id="slide_img3" class="onDesktopSlide" src="./images/obras/obra-3.png" layout="responsive" decoding="async"
-                            loading="lazy" />
-                        <img id="slide_img3_m" class="onMobileSlide" src="./images/obrasMobile/mobile4.png" layout="responsive"
+                        <img id="slide_img3" class="onDesktopSlide" src="./images/obras/obra-3.png" layout="responsive"
                             decoding="async" loading="lazy" />
+                        <img id="slide_img3_m" class="onMobileSlide" src="./images/obrasMobile/mobile4.png"
+                            layout="responsive" decoding="async" loading="lazy" />
                         <p class="legend_photo">
                             Las imágenes corresponden al registro fotográfico de obras ejecutadas a través de
                             narcobenefactorados, pero han sido distorsionadas para resguardar a las comunidades de
@@ -264,10 +264,10 @@
             <section class="slide">
                 <div class="slide__content">
                     <div class="slide__image">
-                        <img id="slide_img4" class="onDesktopSlide" src="./images/obras/obra-4.png" layout="responsive" decoding="async"
-                            loading="lazy" />
-                        <img id="slide_img4_m" class="onMobileSlide" src="./images/obrasMobile/mobile5.png" layout="responsive"
+                        <img id="slide_img4" class="onDesktopSlide" src="./images/obras/obra-4.png" layout="responsive"
                             decoding="async" loading="lazy" />
+                        <img id="slide_img4_m" class="onMobileSlide" src="./images/obrasMobile/mobile5.png"
+                            layout="responsive" decoding="async" loading="lazy" />
                         <p class="legend_photo">
                             Las imágenes corresponden al registro fotográfico de obras ejecutadas a través de
                             narcobenefactorados, pero han sido distorsionadas para resguardar a las comunidades de
@@ -318,9 +318,13 @@
         </div>
 
         <div class="row photo-site">
-            <img id="img1" class="onDesktopSlide mainImg image" data-img="./images/emilio.png" alt="emilio" />
-            <img id="img1_m" class="onMobileSlide mainImg image" data-img="./images/mobile-emilio.png" layout="responsive"
-                decoding="async" loading="lazy" />
+            <picture>
+                <source srcset="./images/emilio.webp" type="image/webp">
+                <img id="img1" class="onDesktopSlide mainImg image" data-img="./images/emilio.webp" alt="emilio" />
+                <img id="img1_m" class="onMobileSlide mainImg image" data-img="./images/mobile-emilio.png"
+                    layout="responsive" decoding="async" loading="lazy" />
+            </picture>
+
             <p>
                 Emilio conoce muy bien el negocio del narcotráfico, pero dice que “ya hizo capital” y ahora quiere
                 probar suerte en la política para “ayudar a su pueblo”.
@@ -367,8 +371,8 @@
 
         <div class="row photo-site">
             <img id="img2" class="onDesktopSlide mainImg image" data-img="./images/documentos.png" alt="Documentos" />
-            <img id="img2_m" class="onMobileSlide mainImg image" data-img="./images/mobile-documentos.png" layout="responsive"
-                decoding="async" loading="lazy" />
+            <img id="img2_m" class="onMobileSlide mainImg image" data-img="./images/mobile-documentos.png"
+                layout="responsive" decoding="async" loading="lazy" />
             <p>
                 Estos documentos están editados para proteger la ubicación de la comunidad y evitar cualquier tipo de
                 represalias.
@@ -445,8 +449,8 @@
 
         <div class="row photo-site">
             <img id="img3" class="onDesktopSlide mainImg image" data-img="./images/ronald.png" alt="Ronald" />
-            <img id="img3_m" class="onMobileSlide mainImg image" data-img="./images/mobile-ronald.png" layout="responsive"
-                decoding="async" loading="lazy" />
+            <img id="img3_m" class="onMobileSlide mainImg image" data-img="./images/mobile-ronald.png"
+                layout="responsive" decoding="async" loading="lazy" />
             <p>
                 Ronald ha pasado casi la mitad de su vida como raspachín, pero dice no querer involucrarse más en el
                 negocio del narcotráfico para evitar el riesgo de caer preso.
@@ -817,9 +821,9 @@
 
     let callback = (entries, observer) => {
         entries.forEach(entry => {
-            if(entry.isIntersecting) {
+            if (entry.isIntersecting) {
                 let imageUrl = entry.target.getAttribute('data-img')
-                if(imageUrl) {
+                if (imageUrl) {
                     entry.target.src = imageUrl
                     observer.unobserve(entry.target)
                 }
