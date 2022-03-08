@@ -26,6 +26,10 @@ body {
     position: relative
 }
 
+p {
+    font-display: fallback;
+}
+
 .sticky-gray {
     background: #141411;
     border-bottom: 5px solid #4e5718;
