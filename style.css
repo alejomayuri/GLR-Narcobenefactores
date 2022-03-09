@@ -18,7 +18,7 @@ html, body {
 }
 
 body {
-    background-image: url('./images/fondo.webp');
+    background-image: url('./images/fondo.jpg');
     background-size: contain;
     margin: 0;
     overflow-x: hidden;
